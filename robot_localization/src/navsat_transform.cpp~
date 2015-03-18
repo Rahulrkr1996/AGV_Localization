@@ -25,7 +25,7 @@ namespace RobotLocalization
 	gpsUpdated_(false),		//Whether or not we have new GPS data
 	worldFrameId_("odom")		//Frame ID of the GPS odometry output
  {
-    latestUtmCovariance_.resize(POSE_SIZE, POSE_SIZE);	//Covarience for most recent GPS/UTM data
+    latestUtmCovariance_.resize(POSE_SIZE, POSE_SIZE);
   }
 
   NavSatTransform::~NavSatTransform()
